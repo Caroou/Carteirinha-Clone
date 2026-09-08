@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Componentes",
-    "slug": "Componentes",
+    "name": "Carteirinha",
+    "slug": "Carteirinha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +20,19 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.carollyne.carteirinha"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "285d5b77-225a-4b3e-97aa-91b115850e11"
+      }
     }
   }
 }

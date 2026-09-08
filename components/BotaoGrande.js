@@ -1,13 +1,15 @@
-import { Text, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './Style';
 import Ionicons from '@expo/vector-icons/Ionicons'
 
 
-export default function BotaoGrande({title, type}){
+export default function BotaoGrande({title, type, style}){
     return(
-        <View style={styles.botaoGrande}>
-            <Ionicons name={type} color="white" size={26}></Ionicons>
-            <Text style={styles.texto}>{title}</Text>   
-        </View>
+        <TouchableOpacity activeOpacity={0.5}>
+            <View style={[styles.botaoGrande, style]}>
+                <Ionicons name={type} color="white" size={35}></Ionicons>
+                <Text style={styles.texto}>{title}</Text>   
+            </View>
+        </TouchableOpacity>
     );
 };
